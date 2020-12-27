@@ -67,7 +67,7 @@ public class cop_set extends JDialog {
 				if(!chang){
 					size.setEnabled(true);
 					date.setEnabled(false);
-					tex.setText("Reconnaître les fichiers identiques à l'aide de leur taille.");
+					tex.setText("Reconnaître les fich  identiques à l'aide de leur taille.");
 				}
 				else{
 					size.setEnabled(false);
