@@ -117,10 +117,11 @@ public class cop_set extends JDialog {
 		btnTailleDuFichier.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.ITALIC, 15));
 		
 	   tex = new JLabel("Reconna\u00EEtre les fichiers identiques \u00E0 l'aide de leur taille et de leur date.");
+	   tex.setIcon(new ImageIcon(cop_set.class.getResource("/sync/icons/105690211025884527.png")));
 	   tex.setBackground(Color.WHITE);
 	   tex.setForeground(Color.BLACK);
-	   tex.setBounds(26, 360, 631, 40);
-	   tex.setFont(new Font("Sitka Display", Font.BOLD, 17));
+	   tex.setBounds(26, 360, 631, 66);
+	   tex.setFont(new Font("Sitka Display", Font.BOLD, 18));
 	   contentPanel.setLayout(null);
 	   contentPanel.add(lblChoisirUneVariante);
 	   contentPanel.add(date);
