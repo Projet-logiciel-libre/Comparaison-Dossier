@@ -58,7 +58,7 @@ public class cop_set extends JDialog {
 		JButton btnNewButton = new JButton("Date du fichier");
 		btnNewButton.setForeground(Color.BLACK);
 		btnNewButton.setBackground(SystemColor.window);
-		btnNewButton.setBounds(57, 311, 174, 38);
+		btnNewButton.setBounds(48, 289, 174, 46);
 		btnNewButton.setToolTipText("reconna\u00EEtre les fichiers identiques \u00E0 l'aide leur date");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -86,7 +86,7 @@ public class cop_set extends JDialog {
 		lblChoisirUneVariante.setFont(new Font("Sitka Display", Font.BOLD, 23));
 		
 		final JLabel date = new JLabel("");
-		date.setBounds(26, 49, 296, 241);
+		date.setBounds(10, 49, 353, 241);
 		date.setIcon(new ImageIcon("C:\\Users\\AMEL\\Desktop\\abc(1).jfif"));
 		date.setEnabled(!chang);
 		
@@ -97,7 +97,7 @@ public class cop_set extends JDialog {
 		
 		JButton btnTailleDuFichier = new JButton("Taille du fichier");
 		btnTailleDuFichier.setBackground(SystemColor.window);
-		btnTailleDuFichier.setBounds(435, 313, 174, 34);
+		btnTailleDuFichier.setBounds(449, 291, 180, 40);
 		btnTailleDuFichier.setToolTipText("reconna\u00EEtre les fichiers identiques \u00E0 l'aide leur taille");
 		btnTailleDuFichier.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
