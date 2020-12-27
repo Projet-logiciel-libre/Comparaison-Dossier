@@ -189,11 +189,11 @@ public class Aplication extends JFrame implements ActionListener{
 		panel.setBounds(10, 11, 615, 54);
 		contentPane.add(panel);
 		panel.setLayout(null);
-		JButton comparer = new JButton("Comparer");
-		comparer.setToolTipText("Comparer");
+		JButton Comparaison = new JButton("Comparison");
+		Comparaison.setToolTipText("Comparison");
 
 		//Compare button Action 
-		comparer.addActionListener(new ActionListener() {
+		Comparaison.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int nb_file=0;
     			int nb_rep=0;
@@ -365,12 +365,12 @@ public class Aplication extends JFrame implements ActionListener{
 		}
 		
 				);
-		comparer.setIcon(new ImageIcon(Aplication.class.getResource("/sync/icons/105690211025884527.png")));
-		comparer.setFont(new Font("Segoe UI", Font.BOLD, 16));
-		comparer.setBounds(26, 11, 186, 39);
-		panel.add(comparer);
+		Comparaison.setIcon(new ImageIcon(Aplication.class.getResource("/sync/icons/105690211025884527.png")));
+		Comparaison.setFont(new Font("Segoe UI", Font.BOLD, 16));
+		Comparaison.setBounds(10, 11, 186, 39);
+		panel.add(Comparaison);
 		
-		JButton btnSynchronise = new JButton("Synchroniser");
+		JButton btnSynchronise = new JButton("Synchronisation");
 		btnSynchronise.setToolTipText("Synchroniser");
 		
 		//Sync button action
@@ -487,7 +487,7 @@ public class Aplication extends JFrame implements ActionListener{
 		);
 		btnSynchronise.setIcon(new ImageIcon(Aplication.class.getResource("/sync/icons/synchronization-arrows-couple22.png")));
 		btnSynchronise.setFont(new Font("Segoe UI", Font.BOLD, 16));
-		btnSynchronise.setBounds(405, 11, 186, 39);
+		btnSynchronise.setBounds(350, 11, 197, 39);
 		panel.add(btnSynchronise);
 		
 		JButton button_3 = new JButton("");
@@ -500,7 +500,7 @@ public class Aplication extends JFrame implements ActionListener{
 		});
 		button_3.setToolTipText("Synchronisation Param\u00E9tres");
 		button_3.setIcon(new ImageIcon(Aplication.class.getResource("/sync/icons/settings-work-tool22.png")));
-		button_3.setBounds(326, 11, 40, 39);
+		button_3.setBounds(267, 11, 40, 39);
 		panel.add(button_3);		
 		
 		JButton button = new JButton("");
@@ -512,7 +512,7 @@ public class Aplication extends JFrame implements ActionListener{
 		});
 		button.setIcon(new ImageIcon(Aplication.class.getResource("/sync/icons/settings-work-tool1.png")));
 		button.setToolTipText("Comparaison Param\u00E9tres");
-		button.setBounds(242, 11, 40, 39);
+		button.setBounds(206, 11, 40, 39);
 		panel.add(button);
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
@@ -736,7 +736,7 @@ public class Aplication extends JFrame implements ActionListener{
 	    
 	    gauche_droit = new JLabel("");
 	    gauche_droit.setToolTipText("copy/create les fichier \u00E0 partir de gauche a droite ");
-	    gauche_droit.setBounds(232, 431, 40, 39);
+	    gauche_droit.setBounds(236, 437, 40, 39);
 	    contentPane.add(gauche_droit);
 	    gauche_droit.setIcon(new ImageIcon(Aplication.class.getResource("/sync/icons/so_create_right.png")));
 	    
@@ -807,6 +807,4 @@ public class Aplication extends JFrame implements ActionListener{
 	public static boolean sens(){
 		return gauche_droit.isEnabled();
 	}
-		
-	
 }
